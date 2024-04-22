@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif
 }
 
 /*conteiner header and main  */
@@ -73,7 +74,24 @@ header div.account img:last-of-type {
 /*! main */
 main {
     background-color: #141922;
-    width: calc(100vw - 52px);
+    width: calc(100vw - 40px);
+}
+
+main .upgrade {
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 1rem;
+}
+
+main button {
+    padding: .5rem 2rem;
+    background: none;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid #b8b9bb;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 /*! footer */
