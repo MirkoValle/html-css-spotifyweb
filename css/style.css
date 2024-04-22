@@ -10,12 +10,22 @@ div.conteiner {
     height: calc(100vh - 96px);
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /*! header */
 header {
     background-color: black;
-    width: 3rem;
-    display: flex;
     color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+header ul {
+    list-style: none;
 }
 
 header img[alt="main logo spotify"] {
@@ -26,16 +36,36 @@ header img {
     width: 1.5rem;
 }
 
-header p {
+header p,
+header hr {
     display: none;
 }
 
+header div.playlist {
+    display: none;
+}
 
+header .account {
+    align-items: center;
+}
+
+header div.account img:first-of-type {
+    width: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 2px;
+}
+
+header div.account img:last-of-type {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #808080;
+    border-radius: 50%;
+}
 
 /*! main */
 main {
     background-color: #141922;
-    width: calc(100vh - 3rem);
+    width: calc(100vw - 52px);
 }
 
 /*! footer */
