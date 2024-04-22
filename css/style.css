@@ -36,6 +36,14 @@ header img {
     width: 1.5rem;
 }
 
+header nav {
+    padding: 1rem 0;
+}
+
+header li {
+    padding: .2rem 0;
+}
+
 header p,
 header hr {
     display: none;
