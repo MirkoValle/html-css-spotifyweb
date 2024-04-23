@@ -94,7 +94,7 @@
                 <!-- navigazione scelta di ricerca -->
                 <div class="main-header">
                     <nav>
-                        <ul>
+                        <ul class="flex-wrap">
                             <li>In evidenza</li>
                             <li>Podcast</li>
                             <li>Classifiche</li>
@@ -105,29 +105,69 @@
                     </nav>
                 </div>
                 <!-- articoli riprodotti di recente -->
-                <div>
-                    <h2>Recently played</h2>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </div>
-                <!-- articoli creati per te -->
-                <div>
-                    <h2>Creato per John Doe</h2>
-                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                    <article></article>
-                    <article></article>
-                </div>
-                <!-- artisti pù popolari -->
-                <div>
-                    <h2>Artisti più popolari</h2>
-                    <p>Più ascolti, più accuratisaranno i suggerimenti</p>
-                    <article></article>
-                    <article></article>
-                </div>
+                <section>
+                    <div>
+                        <h2>Recently played</h2>
+                        <div class="flex-wrap content">
+                            <article class="flex-column">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <h3>Heavy Metal</h3>
+                                <p>Subtitle</p>
+                            </article>
+                            <article class="flex-column">
+                                <img src="img/stranger.jpeg" alt="">
+                                <h3>Stranger Things, Vol. 1 (Netflix Original Series Soundtrack)</h3>
+                                <p>Kyle Dixon & Micheal Stein</p>
+                            </article>
+                            <article class="flex-column">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <h3>A quiet place</h3>
+                                <p>Subtitle</p>
+                            </article>
+                            <article class="flex-column">
+                                <img src="img/split.jpeg" alt="">
+                                <h3>Split</h3>
+                                <p>Subtitle</p>
+                            </article>
+                            <article class="flex-column">
+                                <img src="img/cure.jpeg" alt="">
+                                <h3>A cure for wellness</h3>
+                                <p>Subtitle</p>
+                            </article>
+                            <article class="flex-column">
+                                <img src="img/sinister.jpeg" alt="">
+                                <h3>Sinister</h3>
+                                <p>Subtitle</p>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- articoli creati per te -->
+                    <div class="flex-wrap content">
+                        <h2>Creato per John Doe</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        <article class="flex-column">
+                            <img src="img/radar.jpeg" alt="">
+                            <h3>Realease Radar</h3>
+                        </article>
+                        <article class="flex-column">
+                            <img src="img/mixdaily.jpeg" alt="">
+                            <h3>Daily Mix 1</h3>
+                        </article>
+                    </div>
+                    <!-- artisti pù popolari -->
+                    <div class="flex-wrap content">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascolti, più accuratisaranno i suggerimenti</p>
+                        <article class="flex-column">
+                            <img class="circle" src="img/youg.jpeg" alt="">
+                            <h3>Lana del Rey</h3>
+                        </article>
+                        <article class="flex-column">
+                            <img class="circle" src="img/einaudi.jpeg" alt="">
+                            <h3>Ludovico Einaudi</h3>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
     </div>

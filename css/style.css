@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 575px;
+    width: 565px;
 }
 
 /*conteiner header and main  */
@@ -18,6 +18,11 @@ div.conteiner {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*! header */
@@ -82,6 +87,9 @@ main {
     background-color: #141922;
     width: calc(100vw - 40px);
     color: #808287;
+    padding: 0 1.5rem;
+    overflow: scroll;
+    position: relative;
 }
 
 /* upgrade section */
@@ -90,6 +98,9 @@ main .upgrade {
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1.5rem 1rem;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 main button {
@@ -104,19 +115,50 @@ main button {
 
 /* main song section*/
 
+main div.content {
+    justify-content: space-between;
+}
 
 main div.main-header ul {
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
+    padding-top: 86px;
 }
 
 main div.main-header ul li {
     padding: 1rem;
 }
 
+main h2,
+main h3 {
+    color: white;
+}
 
+main h2 {
+    padding-bottom: 2rem;
+}
+
+main h3 {
+    padding: 1rem 0 .5rem 0;
+}
+
+main article {
+    width: calc((100% / 2) - .5rem);
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+main article img {
+    width: 100%;
+}
+
+main div h2~p {
+    padding-bottom: 2rem;
+}
+
+main article img.circle {
+    border-radius: 50%;
+}
 
 /*! footer */
 footer {
