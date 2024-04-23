@@ -34,7 +34,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
-
 }
 
 header ul {
@@ -88,7 +87,7 @@ main {
     background-color: #141922;
     width: calc(100vw - 40px);
     color: #808287;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     overflow: scroll;
     position: relative;
 }
@@ -111,6 +110,7 @@ main button {
     border-radius: 1rem;
     border: 1px solid #b8b9bb;
     text-transform: uppercase;
+    font-size: .7rem;
     font-weight: 600;
 }
 
@@ -145,15 +145,22 @@ main h3 {
 }
 
 main h2 {
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    font-size: 1.3rem;
 }
 
 main h3 {
     padding: 1rem 0 .5rem 0;
+    font-size: .9rem;
+}
+
+main p {
+    font-size: .7rem;
+    font-weight: 600;
 }
 
 main article {
-    width: calc((100% / 2) - .3rem);
+    width: calc((100% / 2) - .5rem);
     align-items: center;
     padding-bottom: 1rem;
 }
@@ -262,4 +269,18 @@ footer .audio li div {
 
 footer .audio li div div {
     width: 3vw;
+}
+
+/* ! Responsive */
+
+
+@media screen and (min-width:576px) {
+    header {
+        width: 300px;
+        background-color: black;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+    }
 }
