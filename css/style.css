@@ -427,3 +427,16 @@ footer .audio li div div {
     }
 
 }
+
+
+@media screen and (min-width:992px) {
+
+    main article {
+        width: calc((100% / 6) - .5rem);
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+
+}
