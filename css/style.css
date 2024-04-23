@@ -12,7 +12,7 @@ body {
 /*conteiner header and main  */
 div.conteiner {
     display: flex;
-    height: calc(100vh - 96px);
+    height: calc(100vh - 86.4px);
 }
 
 .flex-column {
@@ -148,6 +148,10 @@ main article {
     padding-bottom: 1rem;
 }
 
+main article h3 {
+    text-align: center;
+}
+
 main article img {
     width: 100%;
 }
@@ -164,5 +168,88 @@ main article img.circle {
 footer {
     background-color: #282828;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: .5rem;
+    height: 86.4px;
+}
+
+footer div.riproduzione,
+div.audio {
+    display: flex;
+    align-items: center;
+    color: #808287;
+    padding: 1rem 0;
+}
+
+footer div.riproduzione h3 {
+    color: white;
+}
+
+footer div.song-info {
+    padding: 0 1.5rem 0 .5rem;
+    font-size: .6rem;
+}
+
+footer div.riproduzione i {
+    font-size: .8rem;
+    padding: .2rem 0;
+}
+
+footer div.riproduzione img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+footer .media-player {
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+footer .media-player ul,
+.audio ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .media-player li {
+    color: white;
+    font-size: 1rem;
+    padding: 0 .2rem;
+}
+
+footer .media-player nav:nth-child(1) li:nth-child(3) {
+    font-size: 1.7rem;
+}
+
+footer li p {
+    font-size: .6rem;
+}
+
+footer li div {
+    height: 3px;
+    width: 30vw;
+    background-color: #595959;
+    border-radius: 16px;
+}
+
+footer li div div {
+    height: 3px;
+    width: 5vw;
+    background-color: #bebebe;
+}
+
+footer .audio li {
+    color: white;
+    font-size: .7rem;
+    padding: 0 .2rem;
+}
+
+footer .audio li div {
+    width: 15vw;
+}
+
+footer .audio li div div {
+    width: 3vw;
 }
