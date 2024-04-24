@@ -355,6 +355,7 @@ footer li .progress-bar .green-bar {
     height: 4px;
     width: 5vw;
     background-color: #bebebe;
+    position: relative;
 }
 
 
@@ -371,6 +372,16 @@ footer .audio li .progress-bar {
 
 footer .audio li .green-bar {
     width: 2vw;
+}
+
+footer .progress-bar:hover .circle-bar {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+    bottom: -6px;
 }
 
 /* ! Responsive */
