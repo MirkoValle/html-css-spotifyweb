@@ -68,7 +68,7 @@ footer .media-player nav:nth-child(1) li:nth-child(3):hover {
     font-size: 2rem;
 }
 
-footer li div:hover div {
+footer li .progress-bar:hover .green-bar {
     background-color: #b2ff2f;
 }
 
@@ -162,7 +162,7 @@ main {
 main .upgrade {
     display: flex;
     justify-content: end;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5rem 1rem;
     position: fixed;
     right: 0;
@@ -311,7 +311,6 @@ footer div.riproduzione img {
 
 footer .media-player {
     align-items: center;
-    padding-bottom: 1rem;
 }
 
 footer .media-player ul,
@@ -344,15 +343,16 @@ footer li p {
     font-size: .6rem;
 }
 
-footer li div {
-    height: 3px;
+footer li .progress-bar {
+    height: 4px;
     width: 30vw;
     background-color: #595959;
     border-radius: 16px;
+    cursor: pointer;
 }
 
-footer li div div {
-    height: 3px;
+footer li .progress-bar .green-bar {
+    height: 4px;
     width: 5vw;
     background-color: #bebebe;
 }
@@ -364,11 +364,12 @@ footer .audio li {
     padding: 0 .2rem;
 }
 
-footer .audio li div {
+footer .audio li .progress-bar {
     width: 8vw;
+    cursor: pointer;
 }
 
-footer .audio li div div {
+footer .audio li .green-bar {
     width: 2vw;
 }
 
