@@ -34,7 +34,10 @@ header {
     color: white;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem;
+}
+
+header section {
+    padding: 1rem;
 }
 
 
@@ -59,6 +62,11 @@ header li {
     padding: .2rem 0;
 }
 
+header section div:first-child li:first-child {
+    border-left: 2px solid #b2ff2f;
+    border: none;
+}
+
 header a {
     text-decoration: none;
     color: #808287;
@@ -77,6 +85,7 @@ header div.playlist {
 
 header .account {
     align-items: center;
+    padding: .5rem 1rem;
 }
 
 header div.account div:first-of-type img {
@@ -152,7 +161,7 @@ main h3 {
 }
 
 main h2 {
-    padding: 2rem 0;
+    padding: 2rem 0 .5rem 0;
     font-size: 1.3rem;
 }
 
@@ -182,7 +191,7 @@ main article img {
 }
 
 main div h2~p {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 main article img.circle {
@@ -273,6 +282,7 @@ footer li div div {
     background-color: #bebebe;
 }
 
+
 footer .audio li {
     color: #fcfcfc;
     font-size: .7rem;
@@ -280,11 +290,11 @@ footer .audio li {
 }
 
 footer .audio li div {
-    width: 15vw;
+    width: 8vw;
 }
 
 footer .audio li div div {
-    width: 3vw;
+    width: 2vw;
 }
 
 /* ! Responsive */
@@ -297,15 +307,28 @@ footer .audio li div div {
         color: white;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 1rem 1rem .5rem 1rem;
+
+    }
+
+    header section {
+        padding: 0;
+    }
+
+
+    header section div:first-child li:first-child {
+        border-left: 2px solid #b2ff2f;
+
     }
 
     header img[alt="main logo spotify"] {
         display: inline-block;
-        width: 7rem;
-        padding-bottom: 1rem;
+        width: 10rem;
+        padding: 1rem;
     }
 
+    header li {
+        padding-left: 1rem;
+    }
 
     header img[alt="small main logo spotify"] {
         display: none;
@@ -334,12 +357,14 @@ footer .audio li div div {
         display: flex;
         align-items: center;
         padding-bottom: .8rem;
+        padding-left: 1rem;
     }
 
     header .playlist h2 {
         font-size: .8rem;
         text-transform: uppercase;
         padding-bottom: .5rem;
+        padding-left: 1rem;
     }
 
     header .playlist i {
