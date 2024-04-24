@@ -63,13 +63,23 @@ footer .riproduzione i:hover {
     cursor: pointer;
 }
 
-footer .media-player nav:nth-child(1) li:nth-child(3):hover {
+footer .media-player nav div li:hover {
     cursor: pointer;
     font-size: 2rem;
 }
 
 footer li .progress-bar:hover .green-bar {
     background-color: #b2ff2f;
+}
+
+footer .progress-bar:hover .circle-bar {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    right: -5px;
+    bottom: -6px;
 }
 
 /*! header */
@@ -335,8 +345,16 @@ footer .media-player li {
     padding: 0 .2rem;
 }
 
-footer .media-player nav:nth-child(1) li:nth-child(3) {
+footer .media-player nav div {
+    position: relative;
+}
+
+footer .media-player nav div li {
     font-size: 1.7rem;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
 }
 
 footer li p {
@@ -374,15 +392,6 @@ footer .audio li .green-bar {
     width: 2vw;
 }
 
-footer .progress-bar:hover .circle-bar {
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    background-color: white;
-    border-radius: 50%;
-    right: 0;
-    bottom: -6px;
-}
 
 /* ! Responsive */
 
