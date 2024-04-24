@@ -211,6 +211,10 @@ main h2 {
     font-size: 1.3rem;
 }
 
+main section div:first-child h2 {
+    padding-bottom: 2rem;
+}
+
 main h3 {
     padding: 1rem 0 .5rem 0;
     font-size: .9rem;
