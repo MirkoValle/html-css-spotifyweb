@@ -57,6 +57,21 @@ main article:hover .cover {
 }
 
 
+/* footer */
+footer .riproduzione i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+footer .media-player nav:nth-child(1) li:nth-child(3):hover {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+footer li div:hover div {
+    background-color: #b2ff2f;
+}
+
 /*! header */
 header {
     width: 40px;
@@ -301,6 +316,10 @@ footer .media-player ul,
     list-style: none;
     align-items: center;
     justify-content: space-between;
+}
+
+footer .media-player ul {
+    margin: .5rem 0;
 }
 
 footer .media-player nav:first-of-type {
