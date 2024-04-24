@@ -177,6 +177,7 @@ main .upgrade {
     position: fixed;
     right: 0;
     left: 41px;
+    z-index: 1;
 }
 
 main button {
