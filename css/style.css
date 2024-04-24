@@ -127,10 +127,6 @@ main button {
 
 /* main song section*/
 
-main div.content {
-    justify-content: space-between;
-}
-
 main div.main-header ul {
     list-style: none;
     justify-content: center;
@@ -171,9 +167,10 @@ main p {
 }
 
 main article {
-    width: calc((100% / 2) - .5rem);
+    width: calc((100% / 2));
     align-items: center;
     padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 main article h3 {
@@ -413,7 +410,7 @@ footer .audio li div div {
 @media screen and (min-width:768px) {
 
     main article {
-        width: calc((100% / 4) - .5rem);
+        width: calc((100% / 4));
         justify-content: flex-start;
         align-items: center;
         padding-bottom: 1rem;
@@ -434,7 +431,7 @@ footer .audio li div div {
 @media screen and (min-width:992px) {
 
     main article {
-        width: calc((100% / 6) - .5rem);
+        width: calc((100% / 6));
         justify-content: flex-start;
         align-items: center;
         padding-bottom: 1rem;
